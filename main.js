@@ -748,7 +748,7 @@ for(teams in teams) {
     console.log(teams);
 }
 
-// class
+// classs
 
 class Car {
     constructor(model,color,millage){
