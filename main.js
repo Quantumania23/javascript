@@ -460,13 +460,13 @@ console.log(devClass);
 
 // mapping over the array
 // splits out things in an array
-let developersNames = 
-devClass.map((deve) => {
+// let developersNames = 
+// devClass.map((deve) => {
 
-    return deve.name
-})
+//     return deve.name
+// })
 
-console.log(developersNames);
+// console.log(developersNames);
 
 let developersAge = 
 devClass.map((deve) => {
@@ -510,8 +510,6 @@ decimal.reduce ((curr, acc, i, arr) => {
 }, 0)
 
 console.log(Math.round(sumofDecimal));
-
-
 
 let [a, b, c, d, e, f, g, h, i, j, k, l, m, n] = devClass
 
@@ -677,33 +675,6 @@ for(let i = 0; i < 10 ; i++) {
      console.log(i);
  }
 
-
- // time
-
- let time = () => {
- 
-    let date = new Date()
-
-    let year = date.getFullYear()
-
-    let month = date.getMonth()
-
-    let hours = date.getHours()
-
-    let minutes = date.getMinutes()
-
-    let seconds = date.getSeconds()
-
-    console.log(date);
-    console.log(year);
-    console.log(month);
-    console.log(hours);
-    console.log(minutes);
-    console.log(seconds);
-
-    console.log(`${hours}  : ${minutes}  : ${seconds}`);
- }
-
 //  for loop
  let numers = [2,3,4,5]
  for(let i = 2; i <= numers.length+ 1 ; i++) {
@@ -764,3 +735,114 @@ class Car {
 
 const Bmw = new Car('X6', 'gold', 10)
 console.log(Bmw);
+
+
+function showTime() {
+let date = new Date()
+let hours = date.getHours()
+let minutes = date.getMinutes()
+let seconds = date.getSeconds()
+let milliseconds = date.getMilliseconds()
+
+let time = `${hours}: ${minutes} : ${seconds} : ${milliseconds}`
+
+setTimeout(() => showTime(), 1000)
+
+console.log(time);
+ }
+
+//  showTime()
+
+// Document Object Model (DOM)
+
+// using queryselector
+let selector = document.querySelector('div')
+console.log(selector);
+
+// using queryselectorAll
+let all = document.querySelectorAll('div')
+console.log(all);
+
+// using tagname
+ let div = document.getElementsByTagName('div')
+ console.log(div);
+
+ // using classes
+ let faith = document.querySelector('.faith')
+
+let speech = 'I have a husband and a boyfriend!!!'
+
+// faith.append(speech)
+
+faith.textContent = speech
+
+let secondFaith = document.createElement('div')
+
+console.log(secondFaith);
+
+faith.append(secondFaith)
+
+//  console.log(faith);
+
+ //using id's
+  let ganira = document.getElementById('ganira')
+  console.log(ganira);
+
+ console.log(devClass);
+
+ // using textContent to display items on the web
+ let developerName = 
+ devClass.map((deve) => {
+
+    return deve.name
+})
+
+ganira.textContent = developerName
+
+let developerProfession = devClass.map((deve) => {
+
+    return deve.profession
+})
+
+faith.textContent =developerProfession
+
+let carrierTwo = document.createElement('h1')
+
+let profession = devClass.map((deve) => {
+    return deve.profession
+})
+
+carrierTwo.textContent = profession
+
+ganira.append(carrierTwo)
+
+
+
+let mike = document.querySelector('.mike')
+
+let carrierThree = document.createElement('p')
+
+let developerAge = devClass.map((deve)  => {
+
+    return deve.age
+})
+
+mike.textContent = developerAge
+
+
+// let img = document.querySelector('img')
+// for(let i = 0; i < 15; i++) {
+//     const carrierFour = document.createElement("img");
+//     img.src = "./assets/Gotham-poster.jpg" + i;
+//     img.classList.add("img-margin");
+//     img.addEventListener("click", function() {
+//      img.classList.add("img-rounded-border");
+//     })
+//     document.body.appendChild(img);
+//   }
+
+  for(let i = 0; i < 15; i++) {
+    const img = document.createElement("img");
+    img.src = "/assets/bad boys.jpg";
+    document.body.appendChild(img);
+ }
