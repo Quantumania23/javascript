@@ -478,7 +478,6 @@ console.log(devClass);
 
 let numss = [4, 9 ,16, 25, 36, 49]
 
-
 // reducing method
 
 //reduces an array to one value.
@@ -567,8 +566,6 @@ console.log(Dodge.accelerate());
 // let seats = Dodge.seats
 
 // let automatic = Dodge.automatic
-
-
 
 // destructuring in Es6
 
@@ -772,17 +769,17 @@ console.log(all);
 
 let speech = 'I have a husband and a boyfriend!!!'
 
-// faith.append(speech)
+ faith.append(speech)
 
-faith.textContent = speech
+ faith.textContent = speech
 
 let secondFaith = document.createElement('div')
 
 console.log(secondFaith);
 
-faith.append(secondFaith)
+ faith.append(secondFaith)
 
-//  console.log(faith);
+  console.log(faith);
 
  //using id's
   let ganira = document.getElementById('ganira')
@@ -804,7 +801,7 @@ let developerProfession = devClass.map((deve) => {
     return deve.profession
 })
 
-faith.textContent =developerProfession
+ faith.textContent =developerProfession
 
 let carrierTwo = document.createElement('h1')
 
@@ -812,9 +809,9 @@ let profession = devClass.map((deve) => {
     return deve.profession
 })
 
-carrierTwo.textContent = profession
+ carrierTwo.textContent = profession
 
-ganira.append(carrierTwo)
+ ganira.append(carrierTwo)
 
 
 
@@ -827,22 +824,93 @@ let developerAge = devClass.map((deve)  => {
     return deve.age
 })
 
-mike.textContent = developerAge
+let developersProfile = 
+devClass.map((deve) => {
+    
+    return deve.id
+}) 
+
+//  mike.textContent = developersProfile
 
 
-// let img = document.querySelector('img')
 // for(let i = 0; i < 15; i++) {
-//     const carrierFour = document.createElement("img");
-//     img.src = "./assets/Gotham-poster.jpg" + i;
-//     img.classList.add("img-margin");
-//     img.addEventListener("click", function() {
-//      img.classList.add("img-rounded-border");
-//     })
+//     const img = document.createElement("img");
+//     img.src = "/assets/bad boys.jpg";
 //     document.body.appendChild(img);
-//   }
+//  }
 
-  for(let i = 0; i < 15; i++) {
-    const img = document.createElement("img");
-    img.src = "/assets/bad boys.jpg";
-    document.body.appendChild(img);
- }
+//  for(let i = 0; i < 15; i++) {
+//     const id = document.createElement("img");
+
+//  }
+
+
+//  var container = document.getElementById("container");
+// for( let i = 1;i <=9; i++)
+// {
+// 	var el = document.createElement("div");
+//   el.className ="card";
+//   el.id = "card" + i;
+//   el.innerHTML = "ok";
+//   container.append(el);
+// }
+
+for( i=0; i <devClass.length; i++) {
+
+    let body = document.querySelector('body')
+
+
+    let container = document.createElement('div')
+
+    let card = document.createElement('div')
+
+    let name = document.createElement('h1')
+
+    let age = document.createElement('h3')
+
+    let image = document.createElement('image')
+
+    let profession = document.createElement('h3')
+
+    let gender = document.createElement('h3')
+
+    let tribe = document.createElement('h3')
+
+    let married = document.createElement('h3')
+
+    let hobbies = document.createElement('h3')
+
+    name.textContent =devClass[i].name
+    profession.textContent =devClass[i].profession
+    age.textContent = devClass[i].age
+    gender.textContent = devClass [i].gender
+    married.textContent = devClass [i].married
+    tribe.textContent = devClass [i].tribe
+    hobbies.textContent = devClass[i].hobbies
+
+     image.src = "/assets/hotel transylvania.jpg"
+
+    console.log([i]);
+
+    console.log(body);
+
+    body.append(container);
+
+    container.append(card)
+
+    card.append(name,profession,age,gender,married,tribe,hobbies)
+  
+}
+
+//  function myFunction(x) {
+//     if (x.matches) { 
+//       document.body.style.backgroundColor = "yellow";
+//     } else {
+//       document.body.style.backgroundColor = "blue";
+//     }
+//   }
+  
+//   var x = window.matchMedia("(max-width: 768px)", "(max-width: 1024px)")
+//   myFunction(x)  
+//   x.addListener(myFunction)
+ 
