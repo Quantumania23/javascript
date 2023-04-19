@@ -129,9 +129,9 @@ console.log(cloneNumbers);
 
 let ages = [19,21,25,22,19,18]
 
-let gender = ['male','male', 'female', 'male', 'male' ]
+let Gender = ['male','male', 'female', 'male', 'male' ]
 
-let combinedAgesGender = [...ages,...gender]
+let combinedAgesGender = [...ages,...Gender]
 
 console.log(combinedAgesGender);
 
@@ -526,8 +526,8 @@ let newNumber = oddNumbers.filter((oddNumber) => {
     return oddNumber > 3
 })
 
-// combination of the three topics
 console.log(newNumber);
+// combination of the three topics
 
 let aged = devClass.filter((aged) => {
 
@@ -716,7 +716,7 @@ for(teams in teams) {
     console.log(teams);
 }
 
-// classs
+// class
 
 class Car {
     constructor(model,color,millage){
@@ -724,9 +724,9 @@ class Car {
         this.color = color
         this.millage = millage 
     }
-    walk(){
-        console.log('I am walking');
-    }
+    // walk(){
+    //     console.log('I am walking');
+    // }
 
 }
 
@@ -914,3 +914,245 @@ for( i=0; i <devClass.length; i++) {
 //   myFunction(x)  
 //   x.addListener(myFunction)
  
+
+function greeting(name) {
+    console.log(`Hello ${name}, how are you today`);
+}
+greeting('Mike')
+
+function talking(person1, person2, person3){
+    console.log(`Hello ${person1}, have you met ${person2} or ${person3}?`);
+}
+talking('Mike', 'Hassan', 'Ann')
+
+
+const talkings = (person1, person2, person3 ) => 
+    //block of code
+    console.log(`Hello ${person1},have you met ${person2} or ${person3}`);
+
+talkings('Faith', 'Mukaka', 'Constance')
+
+//destructuring
+// es 5
+ let destructuring = ['Audi', 'Ford', 'Porsche', 'Koenisegg', 'Mclaren']
+ let Audi = destructuring[0]
+ let Ford = destructuring[1]
+ let Porsche = destructuring[2]
+ let Koenisegg = destructuring[3]
+ let Mclaren = destructuring[4]
+
+ console.log(Audi, Ford, Porsche, Koenisegg, Mclaren);
+
+// es 6
+[Audi, Ford, Porsche, Koenisegg, Mclaren] = destructuring
+console.log(Audi, Ford, Porsche, Koenisegg, Mclaren);
+
+// objects
+let Abraham = {
+    age:18,
+    gender: 'Male',
+    Married: false,
+    Hobbies:['eating', 'dancing', 'singing']
+}
+
+//  let age = Abraham.age
+//  let gender = Abraham.gender
+//  let Married = Abraham.Married
+//  let Hobbies = Abraham.Hobbies
+//  console.log(age, gender, Married, Hobbies);
+
+// let {age, gender,Married,Hobbies}= Abraham
+// console.log(age, gender,Married,Hobbies); 
+
+// Loops
+
+// for loops
+for(philip=0; philip<20; philip++){
+    console.log(philip+1);
+}
+
+let Devs=['Hassan', 'Faith', 'Constance', 'Ojuku']
+for(philip=0; philip<Devs.length; philip++){
+    console.log(Devs[philip]);
+}
+
+let ceo = {
+    color:'blue',
+    model:'BMW',
+    year:2023,
+    engines:'5000cc'
+}
+
+// create a loop for the above object
+ let project = Object.values(ceo)
+
+for(i=0; i<project.length; i++) {
+     console.log(project[i]);
+ }
+
+// a js code to print out numbers from 1 to 20
+for(one=0; one<20; one++){
+    console.log(one+1);
+}
+
+//  print out even numbers from 1 to 50
+for(i = 0; i < 50 ; i++) {
+    if (i % 2 !== 0)
+     console.log(i +1);
+ }
+
+//  Doubling elements of an array
+ for(p=0; p<10+1; p++) {
+    if(p * 2 !==0)
+    console.log(p);
+
+    function multiplication(p) {
+        console.log(p*2);
+     }
+    
+     multiplication(p)
+ }
+
+//  printing out unique values from a given array[2,2,5,5,6,4,4]
+  let twinDigits = [2,2,5,5,6,4,4]
+
+  let twinDigit1= twinDigits[0]
+  let twinDigit2= twinDigits[1]
+  let twinDigit3= twinDigits[2]
+  let twinDigit4 = twinDigits[3]
+  let twinDigit5 = twinDigits[4]
+  let twinDigit6 = twinDigits[5]
+  let twinDigit7 = twinDigits[6]
+
+  console.log(twinDigit5);
+// let  newDigits= twinDigits.filter((twinDigits) => {
+
+//     return twinDigits >= 6 
+// })
+
+// console.log(newDigits);
+
+
+// let{2,2,5,5,6,4,4} = twinDigits
+// console.log(6);
+
+// Destructure the elements within the array of Abraham's object
+
+
+console.log(Abraham.age);
+console.log(Abraham.gender);
+console.log(Abraham.Married);
+console.log(Abraham.Hobbies);
+
+// write js code that will print out this
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+// 1 2 3 4 5 6 
+// 1 2 3 4 5 6 7
+
+// let count = 1;
+// let x = "1";
+// for (a = 0; a<=5; a +=1){
+//     console.log(x.repeat(count));
+//     count +=1;
+// }
+
+function generatePythagorusTheorem() {
+    let q = 7;
+    let output = '';
+    for (let i = 1; i <= q; i++) {
+        for (let q = 1; q <= i; q++) {
+            output += q + '  ';
+        }
+        console.log(output);
+        output = '';
+    }
+}
+
+generatePythagorusTheorem();
+
+let heading = document.querySelector('#heading')
+heading.textContent = 'my name is BabaVoss'
+// heading.style.color='green'
+// heading.style.padding = (`50px`)
+// heading.style.backgroundColor = 'Black'
+// heading.style.borderRadius = (`30px`)
+// console.log(heading);
+
+ heading.style =  `width:80%;background-color: rgba(10,10,10,2.9);box-shadow:15px 15px 200px black;border-radius:30px; text-align:center`
+
+heading.addEventListener("mouseenter", function() {
+    heading.style.backgroundColor = 'yellow'
+})
+
+heading.addEventListener("mouseleave", function () {
+    heading.style.backgroundColor = "black"
+})
+
+console.log(heading);
+
+// come up with a chess board with elements inside it
+// and also a star 
+
+let o = 5;
+let string = "";
+// Upside pyramid
+for (let i = 1; i <= o; i++) {
+  // printing spaces
+  for (let j = o; j > i; j--) {
+    string += " ";
+  }
+  // printing star
+  for (let k = 0; k < i * 2 - 1; k++) {
+    string += "*";
+  }
+  string += "\o";
+}
+// downside pyramid
+for (let i = 1; i <= o - 1; i++) {
+  // printing spaces
+  for (let j = 0; j < i; j++) {
+    string += " ";
+  }
+  // printing star
+  for (let k = (o - i) * 2 - 1; k > 0; k--) {
+    string += "*";
+  }
+  string += "\o";
+}
+console.log(string);
+let btn = document.querySelector('.btn')
+console.log(btn);
+// Object.assign(btn.style,{
+//     padding:'15px',
+//     color: 'blue',
+//     backgroundColor: 'red',
+//     boxShadow: 'red'
+// })
+
+btn.style = `padding:20px; color:red; border-radius:35px; background-color: blue;`
+
+const click= () =>{
+
+}
+btn.addEventListener('click', click())
+
+console.log('I have been clicked');
+
+let apiUrl= 'https://api.github.com/users'
+// fetch(apiUrl)
+
+// let data = fetch(apiUrl)
+// console.log(data);
+
+let users = fetch(apiUrl).then(response =>
+    response.json())
+    // console.log(response)
+.then(data => 
+    console.log(data)
+)
+
+ console.log(users);
