@@ -1123,6 +1123,7 @@ for (let i = 1; i <= o - 1; i++) {
   }
   string += "\o";
 }
+
 console.log(string);
 let btn = document.querySelector('.btn')
 console.log(btn);
@@ -1143,7 +1144,7 @@ btn.addEventListener('click', click())
 console.log('I have been clicked');
 
 let apiUrl= 'https://api.github.com/users'
-// fetch(apiUrl)
+ fetch(apiUrl)
 
 // let data = fetch(apiUrl)
 // console.log(data);
@@ -1156,3 +1157,29 @@ let users = fetch(apiUrl).then(response =>
 )
 
  console.log(users);
+
+ for (q=0; q<apiUrl.length; q++) {
+     let body = document.querySelector('body')
+     let container = document.createElement('div')
+     let card = document.createElement('div')
+     let login = document.createElement('h2')
+     let id = document.createElement('h3')
+     let node_id = document.createElement('h3')
+     let avatar_url = document.createElement('h2')
+     let gravatar_id = document.createElement('h3')
+
+
+
+     login.textContent = apiUrl[q].login
+     id.textContent = apiUrl[q].id
+     node_id.textContent = apiUrl[q].apiUrl
+     avatar_url.textContent =apiUrl[q].avatar_url
+     gravatar_id.textContent =apiUrl[q].gravatar_id
+     
+     
+     console.log([q]);
+     console.log(body);
+     body.append(container);
+     container.append(card)
+     card.append(login,id, node_id,avatar_url,gravatar_id)
+    }
