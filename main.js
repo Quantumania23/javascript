@@ -66,7 +66,7 @@ console.log(sentenceThree);
 
 // Arrays
 
-let developers = [ 'Mike', 'Ashivaka', 'Rukia', 'Faith','Mwendwa','Brian']
+let developers = [ 'Mike', 'Ashivaka', 'Ann', 'Faith','Mwendwa','Brian']
 
 console.log(developers);
 
@@ -87,6 +87,8 @@ console.log(developers.length);
  developers.push('Constance')
 
  developers.push('Rukia')
+
+//  adding elements in the beginning of an array
  
  developers.pop('Rukia')
 
@@ -95,11 +97,15 @@ console.log(developers.length);
 
 console.log(developers);
 
+// removing elements from an array
+
 developers.unshift('Rukia')
 
 developers.unshift('Constance')
 
 console.log(developers);
+
+// adding elements on the end an array
 
 developers.shift('Rukia')
 
@@ -291,7 +297,7 @@ console.log(mwendwa.hobbies[3]);
 
 let devClass = [
     {
-        id: 01,
+        id: 1,
         name: 'Hassan Ondieki',
         age: 23,
         married: false,
@@ -302,7 +308,7 @@ let devClass = [
     },
 
     {
-        id: 02,
+        id: 2,
         name: 'Ashivaka John',
         age: 22,
         married: false,
@@ -313,7 +319,7 @@ let devClass = [
     },
 
     {
-        id: 03,
+        id: 3,
         name: 'Philip Mwendwa',
         age: 19,
         married: false, 
@@ -324,7 +330,7 @@ let devClass = [
     },
 
     {
-        id: 04,
+        id: 4,
         name: 'Hillary Mukaka',
         age: 20,
         married: false,
@@ -335,7 +341,7 @@ let devClass = [
     },
 
     {
-        id: 05,
+        id: 5,
         name: 'Fauz Swalleh',
         age: 27,
         married: true,
@@ -346,7 +352,7 @@ let devClass = [
     },
 
     {
-        id: 06,
+        id: 6,
         name: 'Simon Ojuku',
         age: 18,
         married: false,
@@ -357,7 +363,7 @@ let devClass = [
     },
 
     {
-        id: 07,
+        id: 7,
         name: 'Abraham Mafwoli',
         age: 30,
         married: true,
@@ -368,7 +374,7 @@ let devClass = [
     },
 
     {
-        id: 08,
+        id: 8,
         name: 'Ann Ngugi',
         age: 20,
         married: false,
@@ -379,7 +385,7 @@ let devClass = [
     },
 
     {
-        id: 09,
+        id: 9,
         name: 'Mike Peace Mutuku',
         age: 120,
         married: true,
